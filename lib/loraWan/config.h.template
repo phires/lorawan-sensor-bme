@@ -1,0 +1,14 @@
+// Get these information from the TTN dashboard
+// Register a new device as OTAA
+
+// This EUI must be in little-endian format, so least-significant-byte
+// first. When copying an EUI from ttnctl output, this means to reverse
+// the bytes. For TTN issued EUIs the last bytes should be 0xD5, 0xB3,
+// 0x70.
+static const u1_t PROGMEM APPEUI[8]={ 0x00, 0x00, 0x00, 0x00, 0x00, 0xD5, 0xB3, 0x70 };
+
+// node-1
+// This should also be in little endian format, see above.
+static const u1_t PROGMEM DEVEUI[8]={  };
+// APPKEY is MSB
+static const u1_t PROGMEM APPKEY[16] = {  };
